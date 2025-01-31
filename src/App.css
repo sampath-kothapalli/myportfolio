@@ -365,17 +365,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   /* text-align: center; */
   text-align: justify;
-  width: 56%;
+  width: 78%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 65%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  /* width: 33.33333%; */
+  width: 25%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -418,7 +419,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
+  /* border-radius: 0 55px 55px 0; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
 }
 .nav-link#projects-tabs-tab-fourth {
   border: 1px solid rgba(255, 255, 255, 0.5);
