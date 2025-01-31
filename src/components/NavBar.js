@@ -36,7 +36,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" onClick={(e) => e.preventDefault()}> /* temporarily disabled link in future can add once got the personal domain */
             <img src={logo} alt="Portfolio" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
