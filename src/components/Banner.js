@@ -52,12 +52,12 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           {/* Image on the left side without animation */}
-          <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header Img" style={{ width: "75%" }} />
+          <Col xs={12} md={6} xl={4}>
+            <img src={headerImg} alt="Header Img" style={{ width: "90%" }} />
           </Col>
 
           {/* Text on the right side with fade-in animation */}
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={8}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>

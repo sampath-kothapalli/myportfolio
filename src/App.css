@@ -233,7 +233,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-image: url('./assets/img/banner-bg1.jpg');
   background-position: top center;
   background-size: cover;
@@ -363,7 +363,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
+  /* text-align: center; */
+  text-align: justify;
   width: 56%;
 }
 .project .nav.nav-pills {
