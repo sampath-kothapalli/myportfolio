@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import pythonprojImg1 from "../assets/img/python-project-1.png";
 import pythonprojImg2 from "../assets/img/python-project-2.jpg";
 import pythonprojImg3 from "../assets/img/python-project-3.jpg";
+import pythonprojImg4 from "../assets/img/python-project-4.jpg";
 import sqlprojImg1 from "../assets/img/sql-project-1.jpeg";
 import sqlprojImg2 from "../assets/img/python-project-3.jpg";
 import tableauprojImg1 from "../assets/img/dashboard-1.png";
@@ -17,6 +18,12 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const pythonProjects = [
+    {
+      title: "CRM Analysis",
+      description: "This project explores customer behavior in a large e-commerce dataset, uncovering comprehensive CRM data analysis, data preprocessing and EDA techniques to refine customer interaction, and implemented RFM scoring for dynamic customer segmentation, revealing actionable insights on purchasing patterns",
+      imgUrl: pythonprojImg4,
+      githubLink: "https://github.com/sampath-kothapalli/crm-analysis",
+    },
     {
       title: "Netflix Visualization for Content Strategy",
       description: "Analyzing the data and generate insights that could help Netflix in deciding which type of shows/movies to produce and how they can grow the business in different countries.",
@@ -35,6 +42,7 @@ export const Projects = () => {
       imgUrl: pythonprojImg3,
       githubLink: "https://github.com/sampath-kothapalli/walmart",
     },
+
   ];
 
   const tableauProjects = [

@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/banner-bg1.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #f1e5e5;
   font-size: 18px;
   text-align: justify;
   letter-spacing: 0.8px;
@@ -308,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: black;
 }
 .skill-bx {
-  background: #0e0000;
+  background: #111111;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -350,7 +350,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 20px;
   position: relative;
-  background-color: black;
+  background-color: rgb(17, 16, 26);
 }
 .project h2 {
 	font-size: 45px;
