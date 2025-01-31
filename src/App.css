@@ -303,7 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 180px 0 50px 0;
   position: relative;
   background-color: black;
 }
@@ -317,7 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
-  margin-bottom: 20px; /* Reduced gap below heading */
+  margin-bottom: 10px; /* Reduced gap below heading */
 
 }
 .skill p {
@@ -325,7 +325,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0; /*margin: 14px 0 75px 0;*/
+    margin: 14px 0 5px 0; /*margin: 14px 0 75px 0;*/
 }
 .skill-slider {
   width: 80%;
@@ -348,7 +348,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 100px 0 0 0;
   position: relative;
   background-color: rgb(17, 16, 26);
 }
