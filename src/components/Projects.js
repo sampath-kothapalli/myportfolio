@@ -22,13 +22,13 @@ export const Projects = () => {
       title: "CRM Analysis",
       description: "This project explores customer behavior in a large e-commerce dataset, uncovering comprehensive CRM data analysis, data preprocessing and EDA techniques to refine customer interaction, and implemented RFM scoring for dynamic customer segmentation, revealing actionable insights on purchasing patterns",
       imgUrl: pythonprojImg4,
-      githubLink: "https://github.com/sampath-kothapalli/crm-analysis",
+      githubLink: "https://github.com/sampath-kothapalli/crm-analysis/blob/main/README.md",
     },
     {
       title: "Netflix Visualization for Content Strategy",
       description: "Analyzing the data and generate insights that could help Netflix in deciding which type of shows/movies to produce and how they can grow the business in different countries.",
       imgUrl: pythonprojImg1,
-      githubLink: "https://github.com/sampath-kothapalli/netflix-visualization",
+      githubLink: "https://github.com/sampath-kothapalli/netflix-visualization/blob/main/README.md",
     },
     {
       title: "Customer Profiling of Aerofit Treadmill",
