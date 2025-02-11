@@ -21,7 +21,7 @@ export const Contact = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Contact Information</h2>
                   <p><i className="fas fa-user"></i> <strong> Kothapalli Sai Sampath Kumar</strong></p>
-                  <p><i className="fas fa-phone-alt"></i> <strong> +91 - 900411575</strong></p>
+                  <p><i className="fas fa-phone-alt"></i> <strong> +91 - 9000411575</strong></p>
                   <p><i className="fas fa-envelope"></i> <strong>saisampath.kothapalli@gmail.com</strong></p>
                   <p><i className="fas fa-map-marker-alt"></i> <strong>Hyderabad, India</strong></p>
                 </div>

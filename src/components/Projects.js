@@ -4,6 +4,7 @@ import pythonprojImg1 from "../assets/img/python-project-1.png";
 import pythonprojImg2 from "../assets/img/python-project-2.jpg";
 import pythonprojImg3 from "../assets/img/python-project-3.jpg";
 import pythonprojImg4 from "../assets/img/python-project-4.jpg";
+import pythonprojImg5 from "../assets/img/Yulu-Electric-Bike-Sharing.jpg"
 import sqlprojImg1 from "../assets/img/sql-project-1.jpeg";
 import sqlprojImg2 from "../assets/img/python-project-3.jpg";
 import tableauprojImg1 from "../assets/img/dashboard-1.png";
@@ -23,6 +24,12 @@ export const Projects = () => {
       description: "This project explores customer behavior in a large e-commerce dataset, uncovering comprehensive CRM data analysis, data preprocessing and EDA techniques to refine customer interaction, and implemented RFM scoring for dynamic customer segmentation, revealing actionable insights on purchasing patterns",
       imgUrl: pythonprojImg4,
       githubLink: "https://github.com/sampath-kothapalli/crm-analysis/blob/main/README.md",
+    },
+    {
+      title: "Yulu Bike-Sharing Data Analysis: EDA & Hypothesis Testing",
+      description: "This project explores Yulu bike rental data to analyze user demand, seasonal trends, and environmental influences on ride volume. Additionally, hypothesis testing was performed to statistically validate key assumptions regarding rental patterns.",
+      imgUrl: pythonprojImg5,
+      githubLink: "https://github.com/sampath-kothapalli/bike-sharing-data-analysis/blob/main/README.md",
     },
     {
       title: "Netflix Visualization for Content Strategy",
