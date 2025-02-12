@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.49dfe1cb.css",
-    "main.js": "/myportfolio/static/js/main.a0a57252.js",
+    "main.js": "/myportfolio/static/js/main.f862e72c.js",
     "static/js/787.fb771931.chunk.js": "/myportfolio/static/js/787.fb771931.chunk.js",
+    "static/media/yulu.png": "/myportfolio/static/media/yulu.de626953db91105dfb3d.png",
     "static/media/color-sharp2.png": "/myportfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/dashboard-3.png": "/myportfolio/static/media/dashboard-3.1d6f851018a9c22ddaf0.png",
     "static/media/dashboard-1.png": "/myportfolio/static/media/dashboard-1.42d3d0f66029bab8ee2d.png",
@@ -21,7 +22,6 @@
     "static/media/contact-img.svg": "/myportfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/color-sharp-1.jpg": "/myportfolio/static/media/color-sharp-1.45b8c98c0f9504e3d8a2.jpg",
     "static/media/python-project-2.jpg": "/myportfolio/static/media/python-project-2.e986aa63a00ed1be226a.jpg",
-    "static/media/yulu.png": "/myportfolio/static/media/yulu.8c2a6249d4cc1d672b8f.png",
     "static/media/tableau.png": "/myportfolio/static/media/tableau.4c40b694a2b075276079.png",
     "static/media/revicons.eot": "/myportfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/myportfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -34,11 +34,11 @@
     "static/media/arrow2.svg": "/myportfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/myportfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.49dfe1cb.css.map": "/myportfolio/static/css/main.49dfe1cb.css.map",
-    "main.a0a57252.js.map": "/myportfolio/static/js/main.a0a57252.js.map",
+    "main.f862e72c.js.map": "/myportfolio/static/js/main.f862e72c.js.map",
     "787.fb771931.chunk.js.map": "/myportfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49dfe1cb.css",
-    "static/js/main.a0a57252.js"
+    "static/js/main.f862e72c.js"
   ]
 }
