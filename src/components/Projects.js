@@ -4,7 +4,7 @@ import pythonprojImg1 from "../assets/img/python-project-1.png";
 import pythonprojImg2 from "../assets/img/python-project-2.jpg";
 import pythonprojImg3 from "../assets/img/python-project-3.jpg";
 import pythonprojImg4 from "../assets/img/python-project-4.jpg";
-import pythonprojImg5 from "../assets/img/yulu_1.jpg"
+import pythonprojImg5 from "../assets/img/yulu.jpg"
 import sqlprojImg1 from "../assets/img/sql-project-1.jpeg";
 import sqlprojImg2 from "../assets/img/python-project-3.jpg";
 import tableauprojImg1 from "../assets/img/dashboard-1.png";
