@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.49dfe1cb.css",
-    "main.js": "/myportfolio/static/js/main.258931cb.js",
+    "main.js": "/myportfolio/static/js/main.f92f3905.js",
     "static/js/787.fb771931.chunk.js": "/myportfolio/static/js/787.fb771931.chunk.js",
     "static/media/color-sharp2.png": "/myportfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/dashboard-3.png": "/myportfolio/static/media/dashboard-3.1d6f851018a9c22ddaf0.png",
@@ -17,6 +17,7 @@
     "static/media/CentraNo2-Book.ttf": "/myportfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/banner-bg1.jpg": "/myportfolio/static/media/banner-bg1.17b31aa394dc85170580.jpg",
     "static/media/footer-bg.png": "/myportfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/yulu.jpg": "/myportfolio/static/media/yulu.11b2d688fe660fd42ab3.jpg",
     "static/media/python-project-4.jpg": "/myportfolio/static/media/python-project-4.3d78de45547964335da0.jpg",
     "static/media/contact-img.svg": "/myportfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/color-sharp-1.jpg": "/myportfolio/static/media/color-sharp-1.45b8c98c0f9504e3d8a2.jpg",
@@ -33,11 +34,11 @@
     "static/media/arrow2.svg": "/myportfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/myportfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.49dfe1cb.css.map": "/myportfolio/static/css/main.49dfe1cb.css.map",
-    "main.258931cb.js.map": "/myportfolio/static/js/main.258931cb.js.map",
+    "main.f92f3905.js.map": "/myportfolio/static/js/main.f92f3905.js.map",
     "787.fb771931.chunk.js.map": "/myportfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49dfe1cb.css",
-    "static/js/main.258931cb.js"
+    "static/js/main.f92f3905.js"
   ]
 }
