@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.49dfe1cb.css",
-    "main.js": "/myportfolio/static/js/main.f9628b40.js",
+    "main.js": "/myportfolio/static/js/main.3abfc144.js",
     "static/js/787.fb771931.chunk.js": "/myportfolio/static/js/787.fb771931.chunk.js",
     "static/media/color-sharp2.png": "/myportfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/dashboard-3.png": "/myportfolio/static/media/dashboard-3.1d6f851018a9c22ddaf0.png",
@@ -24,8 +24,8 @@
     "static/media/tableau.png": "/myportfolio/static/media/tableau.4c40b694a2b075276079.png",
     "static/media/revicons.eot": "/myportfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/myportfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/yulu.jpg": "/myportfolio/static/media/yulu.1281bb006c94995cb663.jpg",
     "static/media/sql-project-1.jpeg": "/myportfolio/static/media/sql-project-1.31ea66a7ebcb8bb53afa.jpeg",
-    "static/media/yulu.jpg": "/myportfolio/static/media/yulu.2cb85d04d3f051fd72ec.jpg",
     "static/media/revicons.woff": "/myportfolio/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/nav-icon3.svg": "/myportfolio/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
     "static/media/nav-icon2.svg": "/myportfolio/static/media/nav-icon2.edf87e8e4045abbe9bc77c9f33eadf39.svg",
@@ -34,11 +34,11 @@
     "static/media/arrow2.svg": "/myportfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/myportfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.49dfe1cb.css.map": "/myportfolio/static/css/main.49dfe1cb.css.map",
-    "main.f9628b40.js.map": "/myportfolio/static/js/main.f9628b40.js.map",
+    "main.3abfc144.js.map": "/myportfolio/static/js/main.3abfc144.js.map",
     "787.fb771931.chunk.js.map": "/myportfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49dfe1cb.css",
-    "static/js/main.f9628b40.js"
+    "static/js/main.3abfc144.js"
   ]
 }
