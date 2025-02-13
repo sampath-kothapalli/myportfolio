@@ -1,4 +1,26 @@
-const serviceAccount = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
+const express = require("express");
+const admin = require("firebase-admin");
+
+const app = express();
+
+// Decode Google Service Account credentials from Render environment variable
+const credentials = JSON.parse(Buffer.from(process.env.GOOGLE_CREDENTIALS_JSON, "base64").toString());
+admin.initializeApp({
+  credential: admin.credential.cert(credentials),
+});
+
+// Define a basic route to check if the server is running
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
+// Use Render's assigned PORT
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
+
+// const serviceAccount = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
 
 // const express = require("express");
 // const router = express.Router();

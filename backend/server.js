@@ -1,4 +1,12 @@
-const serviceAccount = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
+const credentials = JSON.parse(Buffer.from(process.env.GOOGLE_CREDENTIALS_JSON, "base64").toString());
+admin.initializeApp({
+  credential: admin.credential.cert(credentials),
+});
+
+
+
+
+// const serviceAccount = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
 
 // const express = require("express");
 // const cors = require("cors");
