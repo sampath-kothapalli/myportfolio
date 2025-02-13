@@ -61,7 +61,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://myportfolio-wk3p.onrender.com/contact", { 
+    let response = await fetch("https://myportfolio-igfk.onrender.com", { 
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formDetails),
