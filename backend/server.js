@@ -1,62 +1,64 @@
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const fs = require("fs");
-const { google } = require("googleapis");
-const multer = require("multer");
-require("dotenv").config();
+const serviceAccount = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
 
-const app = express();
-const PORT = process.env.PORT || 5000;
+// const express = require("express");
+// const cors = require("cors");
+// const bodyParser = require("body-parser");
+// const fs = require("fs");
+// const { google } = require("googleapis");
+// const multer = require("multer");
+// require("dotenv").config();
 
-// Middleware
-app.use(cors());
-app.use(bodyParser.json());
+// const app = express();
+// const PORT = process.env.PORT || 5000;
 
-// Google Drive API Setup
-const auth = new google.auth.GoogleAuth({
-    keyFile: "service-account.json", // Your downloaded Google API key file
-    scopes: ["https://www.googleapis.com/auth/drive.file"],
-});
+// // Middleware
+// app.use(cors());
+// app.use(bodyParser.json());
 
-const drive = google.drive({ version: "v3", auth });
+// // Google Drive API Setup
+// const auth = new google.auth.GoogleAuth({
+//     keyFile: "service-account.json", // Your downloaded Google API key file
+//     scopes: ["https://www.googleapis.com/auth/drive.file"],
+// });
 
-// Set up Multer to save form data as a text file before uploading
-const upload = multer({ dest: "uploads/" });
+// const drive = google.drive({ version: "v3", auth });
 
-app.post("/contact", upload.none(), async (req, res) => {
-    try {
-        const { firstName, lastName, email, phone, message } = req.body;
-        const fileName = `Contact-${Date.now()}.txt`;
-        const filePath = `uploads/${fileName}`;
+// // Set up Multer to save form data as a text file before uploading
+// const upload = multer({ dest: "uploads/" });
 
-        // Create a text file with form data
-        fs.writeFileSync(filePath, `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+// app.post("/contact", upload.none(), async (req, res) => {
+//     try {
+//         const { firstName, lastName, email, phone, message } = req.body;
+//         const fileName = `Contact-${Date.now()}.txt`;
+//         const filePath = `uploads/${fileName}`;
 
-        // Upload file to Google Drive
-        const response = await drive.files.create({
-            requestBody: {
-                name: fileName,
-                mimeType: "text/plain",
-                parents: ["1neO8eQVm_2tKxf42yXNFy8a-wvZWVGhb"], // Replace with your Drive folder ID
-            },
-            media: {
-                mimeType: "text/plain",
-                body: fs.createReadStream(filePath),
-            },
-        });
+//         // Create a text file with form data
+//         fs.writeFileSync(filePath, `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
 
-        console.log("File uploaded:", response.data);
-        fs.unlinkSync(filePath); // Delete local file after upload
+//         // Upload file to Google Drive
+//         const response = await drive.files.create({
+//             requestBody: {
+//                 name: fileName,
+//                 mimeType: "text/plain",
+//                 parents: ["1neO8eQVm_2tKxf42yXNFy8a-wvZWVGhb"], // Replace with your Drive folder ID
+//             },
+//             media: {
+//                 mimeType: "text/plain",
+//                 body: fs.createReadStream(filePath),
+//             },
+//         });
 
-        res.json({ code: 200, message: "Message saved to Google Drive!" });
-    } catch (error) {
-        console.error("Error uploading to Drive:", error);
-        res.status(500).json({ code: 500, message: "Failed to save contact info" });
-    }
-});
+//         console.log("File uploaded:", response.data);
+//         fs.unlinkSync(filePath); // Delete local file after upload
 
-// Start Server
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
+//         res.json({ code: 200, message: "Message saved to Google Drive!" });
+//     } catch (error) {
+//         console.error("Error uploading to Drive:", error);
+//         res.status(500).json({ code: 500, message: "Failed to save contact info" });
+//     }
+// });
+
+// // Start Server
+// app.listen(PORT, () => {
+//     console.log(`Server running on http://localhost:${PORT}`);
+// });
