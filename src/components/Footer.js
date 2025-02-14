@@ -13,8 +13,42 @@ export const Footer = () => {
           {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
             {/* <img src={logo} alt="Portfolio" /> */}
-            <p><i className="fas fa-phone-alt"></i> <strong> +91 - 9000411575</strong></p>
-            <p><i className="fas fa-envelope"></i> <strong>saisampath.kothapalli@gmail.com</strong></p>
+            {/* <p><i className="fas fa-phone-alt"></i> <strong> +91 - 9000411575</strong></p> */}
+            {/* <p><i className="fas fa-envelope"></i> <strong>saisampath.kothapalli@gmail.com</strong></p> */}
+            <p>
+              <i className="fas fa-phone-alt"></i> 
+              <strong>
+                <a 
+                  href="tel:+919000411575" 
+                  style={{ 
+                    textDecoration: "none", 
+                    color: "inherit", 
+                    cursor: "pointer" 
+                  }}
+                  onMouseOver={(e) => e.target.style.textDecoration = "underline"}
+                  onMouseOut={(e) => e.target.style.textDecoration = "none"}
+                >
+                  +91 - 9000411575
+                </a>
+              </strong>
+            </p>
+            <p>
+              <i className="fas fa-envelope"></i> 
+              <strong>
+                <a 
+                  href="mailto:saisampath.kothapalli@gmail.com" 
+                  style={{ 
+                    textDecoration: "none", 
+                    color: "inherit", 
+                    cursor: "pointer" 
+                  }}
+                  onMouseOver={(e) => e.target.style.textDecoration = "underline"}
+                  onMouseOut={(e) => e.target.style.textDecoration = "none"}
+                >
+                  saisampath.kothapalli@gmail.com
+                </a>
+              </strong>
+            </p>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">

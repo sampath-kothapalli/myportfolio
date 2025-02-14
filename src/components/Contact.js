@@ -1,39 +1,3 @@
-// import { Container, Row, Col } from "react-bootstrap";
-// import contactImg from "../assets/img/contact-img.svg";  // Optional: if you still want to display an image
-// import 'animate.css';
-// import TrackVisibility from 'react-on-screen';
-
-// export const Contact = () => {
-//   return (
-//     <section className="contact" id="connect">
-//       <Container>
-//         <Row className="align-items-center">
-//           <Col size={12} md={6}>
-//             <TrackVisibility>
-//               {({ isVisible }) =>
-//                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" style={{ width: "75%" }}/>
-//               }
-//             </TrackVisibility>
-//           </Col>
-//           <Col size={12} md={6}>
-//             <TrackVisibility>
-//               {({ isVisible }) =>
-//                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-//                   <h2>Contact Information</h2>
-//                   <p><i className="fas fa-user"></i> <strong> Kothapalli Sai Sampath Kumar</strong></p>
-//                   <p><i className="fas fa-phone-alt"></i> <strong> +91 - 9000411575</strong></p>
-//                   <p><i className="fas fa-envelope"></i> <strong>saisampath.kothapalli@gmail.com</strong></p>
-//                   <p><i className="fas fa-map-marker-alt"></i> <strong>Hyderabad, India</strong></p>
-//                 </div>
-//               }
-//             </TrackVisibility>
-//           </Col>
-//         </Row>
-//       </Container>
-//     </section>
-//   );
-// }
-
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
@@ -60,36 +24,69 @@ export const Contact = () => {
     });
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText("Sending...");
+  
+  //   try {
+  //     let response = await fetch("https://script.google.com/macros/s/AKfycbybbam3Fqx9iwQkmjTwdFwdxatb7KkW-J6rAiwx5iX0o87k1MzueW2v-ql7UB4NsKgCXw/exec", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(formDetails),
+  //       mode: "no-cors",  // ✅ Fix for CORS issues
+  //     });
+  
+  //     console.log("API Response:", response);
+  
+  //     // Since "no-cors" prevents reading the response, assume success
+  //     setStatus({ success: true, message: "Message sent successfully!" });
+  //     setFormDetails(formInitialDetails);
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //     setStatus({ success: false, message: "Failed to connect to the server." });
+  //   }
+  
+  //   setButtonText("Send");
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-
+  
     try {
-      let response = await fetch("https://myportfolio-igfk.onrender.com", {
+      let response = await fetch("https://script.google.com/macros/s/AKfycbz4-rtspoAfATwbKn-Yobv-62K1UVWL7AuXWUeQMqlCC52Y8sGKt1ef-W4a4OX8T7NFtA/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formDetails),
+        mode: "no-cors",  // ✅ Fix for CORS issues
       });
 
-      let result = await response.json();
-      console.log("API Response:", result); // ✅ Debugging API response
-
-      if (response.ok && result.code === 200) {
-        setStatus({ success: true, message: "Message sent successfully!" });
-        setFormDetails(formInitialDetails);
-      } else {
-        setStatus({
-          success: false,
-          message: result.message || "Something went wrong, please try again.",
-        });
-      }
+      console.log("API Response:", response);
+  
+      // Since "no-cors" prevents reading the response, assume success
+      setStatus({ success: true, message: "Message sent successfully!" });
+      setFormDetails(formInitialDetails);
     } catch (error) {
       console.error("Error:", error);
       setStatus({ success: false, message: "Failed to connect to the server." });
     }
-
+  
+    //   let result = await response.json();
+    //   console.log("API Response:", result);
+  
+    //   if (result.status === "Success") {
+    //     setStatus({ success: true, message: "Message sent successfully!" });
+    //     setFormDetails(formInitialDetails);
+    //   } else {
+    //     setStatus({ success: false, message: result.message || "Something went wrong." });
+    //   }
+    // } catch (error) {
+    //   console.error("Error:", error);
+    //   setStatus({ success: false, message: "Failed to connect to the server." });
+    // }
+  
     setButtonText("Send");
   };
+  
 
   return (
     <section className="contact" id="connect">
